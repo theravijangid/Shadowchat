@@ -8,8 +8,8 @@ const setupSocket = (server) => {
     wssEngine: ['ws','wss'],
     transports: ['websocket','polling'],
     cors: {
-      origin: "*",
-      // origin: "https://localhost:3000",
+      // origin: "*",
+      origin: "https://shadowchat-frontend.vercel.app",
       methods: ["GET", "POST"],
       allowedHeaders: ["Content-Type"],
     },
