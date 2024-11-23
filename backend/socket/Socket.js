@@ -8,7 +8,7 @@ const setupSocket = (server) => {
     wssEngine: ['ws','wss'],
     transports: ['websocket','polling'],
     cors: {
-      origin: "https://chatapp-nine-gray.vercel.app",
+      origin: "*",
       // origin: "https://localhost:3000",
       methods: ["GET", "POST"],
       allowedHeaders: ["Content-Type"],
