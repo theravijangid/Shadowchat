@@ -1,0 +1,219 @@
+/* ChatList Component CSS */
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.chatlist-container {
+  width: 100%;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-right: 1px solid #ddd;
+  height: 100vh;
+}
+
+.chatlist-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  padding-top: 30px;   /* nav ki position fixed krne ke baad paading top deni pdi*/
+}
+
+.chatlist-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.chatlist-container li {
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.chatlist-container li:hover {
+  background-color: #e0e0e0;
+}
+
+/* ChatBoard Component CSS */
+.chatboard-container {
+  width: 100%;
+  /* padding: 20px; */
+  background-color: #ffffff;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatboard-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  padding-top: 70px;   /* nav ki position fixed krne ke baad paading top deni pdi*/
+}
+
+.messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-bottom: 10px; /* Add space for input area */
+}
+
+.message {
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  max-width: 60%;
+}
+
+.friend-message {
+  background-color: #f0f0f0;
+  margin-left: 0;
+}
+
+.my-message {
+  background-color: #d1ffd1;
+  margin-left: auto;
+}
+
+.message-input-container {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.message-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.send-button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #218838;
+}
+
+/* ChatList Component CSS */
+.chat-container {
+  display: flex;
+}
+
+/* UserList.css */
+.userlist-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 16px;
+  max-width: 300px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  margin-top: 90px;  /* navbar ko position fixed krne se margin top deni pdi*/
+}
+
+.userlist-container h2 {
+  text-align: center;
+}
+
+.userlist-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.userlist-container li {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 5px 0;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.userlist-container li:hover {
+  background-color: #e0e0e0;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 5px;  /* top left right se 0px ki jagah 5px dena pda kyoki position fixed dene se default spacing ht gyi */
+  left: 5px;
+  right: 5px;
+  border-radius: 8px;
+}
+
+.navbar h2 {
+  color: #fff;
+  margin: 0;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+  color: white;
+}
+
+.navbar ul li a {
+  /* color: white; */
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+}
+
+/* login form design */
+
+.form-container h2{
+  padding-top: 70px;
+}
+
+.email-input,
+.password-input {
+  width: 80%;
+  padding: 12px 20px; /* Padding ko horizontal side par thoda zyada kiya for better feel */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #ccc; /* Light border for a subtle look */
+  border-radius: 8px; 
+  font-size: 16px; /* Comfortable font size */
+  background-color: #f9f9f9; /* Light background color */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+}
+
+.submit-btn {
+  padding: 12px 24px;
+  background: linear-gradient(45deg, #9d7def, #7a58e5);
+  border: none;
+  border-radius: 8px;
+  color: black; 
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
